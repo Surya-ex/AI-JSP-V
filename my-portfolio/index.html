@@ -3,62 +3,178 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Surya | Technical Trainer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="hero">
     <nav class="nav">
-      <h1 class="logo">My Portfolio</h1>
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span class="brand-name">Surya</span>
+      </div>
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <div class="hero-content">
-      <p class="tag">Hello, I'm</p>
-      <h2>Your Name</h2>
-      <p class="subtitle">Aspiring Developer • Problem Solver • Lifelong Learner</p>
-      <a class="btn" href="#projects">View My Work</a>
+      <div>
+        <p class="tag">Technical Trainer · Core Java & Python</p>
+        <h1>Surya</h1>
+        <p class="subtitle">
+          Goal-driven B.Tech IT graduate who turns complex programming ideas into clear, hands-on learning journeys.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#experience">View experience</a>
+          <a class="btn ghost" href="assets/Surya-CV.pdf" download>Download CV</a>
+        </div>
+        <div class="hero-contacts">
+          <a href="mailto:suryaqwerty05@gmail.com">suryaqwerty05@gmail.com</a>
+          <span aria-hidden="true">·</span>
+          <a href="tel:+916374292414">+91 63742 92414</a>
+        </div>
+      </div>
+      <div class="hero-cards">
+        <div class="meta-card">
+          <p class="meta-label">Current</p>
+          <p class="meta-value">Technical Trainer, LeSuccess</p>
+          <p class="meta-note">Delivering Core Java with lab-first sessions since 2024.</p>
+        </div>
+        <div class="meta-card">
+          <p class="meta-label">Focus Areas</p>
+          <p class="meta-value">Operators, control flow, OOP, interfaces, exceptions, collections</p>
+        </div>
+        <div class="meta-card">
+          <p class="meta-label">Education</p>
+          <p class="meta-value">B.Tech, Information Technology</p>
+          <p class="meta-note">CSI College of Engineering, Ketti (2020–2024)</p>
+        </div>
+      </div>
     </div>
   </header>
 
   <main>
     <section id="about" class="card">
-      <h3>About Me</h3>
+      <h3>About</h3>
       <p>
-        I build clean, user-friendly web experiences and enjoy turning ideas into practical digital solutions.
-        This portfolio is a starting point you can customize with your own bio, skills, and achievements.
+        Technical trainer who builds confidence in learners through practical exercises and clear explanations.
+        I simplify Core Java and Python fundamentals and keep batches disciplined, engaged, and measurable.
       </p>
+      <div class="pill-row">
+        <span class="pill">Curriculum design</span>
+        <span class="pill">Hands-on labs</span>
+        <span class="pill">Performance tracking</span>
+      </div>
     </section>
 
-    <section id="projects" class="card">
-      <h3>Projects</h3>
+    <section id="experience" class="card">
+      <h3>Experience</h3>
+      <article class="experience">
+        <div class="exp-header">
+          <h4>Technical Trainer · LeSuccess</h4>
+          <span class="exp-meta">2024 – Present</span>
+        </div>
+        <ul>
+          <li>Deliver Core Java training across operators, control statements, OOP, interfaces, exception handling, and collections.</li>
+          <li>Translate complex topics into stepwise modules suited to varied learning levels.</li>
+          <li>Embed coding drills to reinforce understanding and measure progress.</li>
+          <li>Maintain batch discipline, engagement, and transparent performance tracking.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="skills" class="card">
+      <h3>Skills</h3>
+      <div class="skills-grid">
+        <div>
+          <p class="label">Languages</p>
+          <div class="pill-row">
+            <span class="pill">Java</span>
+            <span class="pill">Python</span>
+          </div>
+        </div>
+        <div>
+          <p class="label">Tools & Platforms</p>
+          <div class="pill-row">
+            <span class="pill">Wireshark</span>
+            <span class="pill">Nmap</span>
+            <span class="pill">HackRF</span>
+            <span class="pill">ADS-B data</span>
+            <span class="pill">NOAA</span>
+          </div>
+        </div>
+        <div>
+          <p class="label">Data & Systems</p>
+          <div class="pill-row">
+            <span class="pill">MySQL</span>
+            <span class="pill">Hadoop</span>
+            <span class="pill">HBase</span>
+            <span class="pill">Linux ops</span>
+            <span class="pill">Git</span>
+          </div>
+        </div>
+        <div>
+          <p class="label">Other</p>
+          <div class="pill-row">
+            <span class="pill">3D modeling</span>
+            <span class="pill">Linux ricing</span>
+            <span class="pill">Communication</span>
+            <span class="pill">Problem solving</span>
+            <span class="pill">Leadership</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="modules" class="card">
+      <h3>Training Emphasis</h3>
       <div class="projects-grid">
         <article>
-          <h4>Project One</h4>
-          <p>A short description of your project and the impact it creates.</p>
+          <h4>Core Java Foundations</h4>
+          <p>Operators, control flow, arrays, and object-oriented principles grounded in practical exercises.</p>
         </article>
         <article>
-          <h4>Project Two</h4>
-          <p>Highlight technologies used and outcomes achieved.</p>
+          <h4>Robust Application Patterns</h4>
+          <p>Interfaces, exception handling, and collections to build resilient, maintainable code.</p>
         </article>
         <article>
-          <h4>Project Three</h4>
-          <p>Showcase another project with a concise summary.</p>
+          <h4>Python for Problem Solving</h4>
+          <p>Clarity-first scripts that teach algorithmic thinking and clean coding habits.</p>
         </article>
+      </div>
+    </section>
+
+    <section id="education" class="card two-col">
+      <div>
+        <h3>Education</h3>
+        <p class="edu-title">B.Tech in Information Technology</p>
+        <p class="muted">CSI College of Engineering, Ketti · 2020 – 2024</p>
+      </div>
+      <div>
+        <h3>Certification</h3>
+        <p class="edu-title">DevOps Cloud Institution Certification</p>
+        <p class="muted">Focused on modern deployment practices.</p>
       </div>
     </section>
 
     <section id="contact" class="card">
       <h3>Contact</h3>
-      <p>Reach out at <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>Interested in structured training or collaborative curriculum design? Let's talk.</p>
+      <div class="contact-grid">
+        <a class="btn primary" href="mailto:suryaqwerty05@gmail.com">Email Surya</a>
+        <a class="btn ghost" href="tel:+916374292414">Call +91 63742 92414</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> My Portfolio. All rights reserved.</p>
+    <p>© <span id="year"></span> Surya. Technical Trainer.</p>
   </footer>
 
   <script src="script.js"></script>
